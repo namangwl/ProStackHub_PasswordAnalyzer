@@ -1,16 +1,57 @@
-# React + Vite
+# 🛡️ Advanced Password Strength Analyzer (Client-Side Evaluation Engine)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+![Vite](https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white)
+![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
 
-Currently, two official plugins are available:
+A high-performance, real-time password security evaluation engine. Built specifically to analyze cryptographic strength based on structural complexity, entropy, and standard cybersecurity protocols without transmitting sensitive data over the network.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+**[🔴 Live Deployment (Vercel)](YAHAN_APNA_VERCEL_LINK_PASTE_KAR_DENA)**
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🏗️ Architecture & Development Approach
 
-## Expanding the ESLint configuration
+Unlike standard UI-bound logic, this project implements a **Modular Architecture** typical of enterprise React applications:
+- **Separation of Concerns:** The evaluation logic is entirely decoupled from the React components (`src/utils/passwordChecker.js`), ensuring the core algorithm can be unit-tested or reused in backend Node.js environments.
+- **Render Optimization:** Utilized React's `useMemo` hook to cache the security analysis, preventing unnecessary re-renders and maintaining a 60fps UI even during rapid typing.
+- **Zero-Dependency Core:** The password evaluation engine relies on raw Regex and mathematical scoring, avoiding bulky third-party validation libraries.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## ✨ Key Features
+- **Real-Time Entropy Scoring:** Evaluates multiple constraints (length, casing, numerics, symbols) in milliseconds.
+- **Actionable Feedback Loop:** Dynamically generates a specific array of issues, guiding the user to strengthen their password.
+- **Glassmorphism UI:** Built with custom, dependency-free CSS implementing modern backdrop-filters and smooth state transitions.
+
+---
+
+## 🔒 Security Brief: Password Best Practices
+As per industry-standard cybersecurity guidelines, organizations and end-users should enforce the following:
+
+1. **Length > Complexity:** A minimum of 12-14 characters. A long, memorable passphrase (e.g., `Coffee-Desk-Sunset-99`) is cryptographically stronger against brute-force/dictionary attacks than a short, complex password (`P@ss12`).
+2. **High Entropy:** Ensure a diverse character space—mixing uppercase, lowercase, numerics, and non-alphanumeric symbols.
+3. **Avoid Predictability:** Never use sequential patterns (123456, qwerty), common dictionary words, or easily OSINT-discoverable personal data (DOBs, phone numbers).
+4. **Contain the Blast Radius:** Enforce strict "No Reuse" policies across different applications to mitigate credential stuffing attacks.
+5. **MFA is Mandatory:** A strong password is only the primary defense layer. It must be paired with Multi-Factor Authentication (MFA/2FA).
+
+---
+
+## 💻 Local Setup & Installation
+
+Clone the repository and run it locally:
+
+\`\`\`bash
+# Clone the repository
+git clone https://github.com/namansharmagwl/ProStackHub_PasswordAnalyzer.git
+
+# Navigate to the directory
+cd ProStackHub_PasswordAnalyzer
+
+# Install dependencies
+npm install
+
+# Start the Vite development server
+npm run dev
+\`\`\`
+
+---
+*Developed as part of the ProStackHub Cybersecurity & Development Internship Track.*
