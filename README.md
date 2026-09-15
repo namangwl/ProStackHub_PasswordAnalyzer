@@ -6,7 +6,7 @@
 
 A high-performance, real-time password security evaluation engine. Built specifically to analyze cryptographic strength based on structural complexity, entropy, and standard cybersecurity protocols without transmitting sensitive data over the network.
 
-**[🔴 Live Deployment (Vercel)] [https://pro-stack-hub-password-analyzer.vercel.app](https://pro-stack-hub-password-analyzer.vercel.app)**
+**[🔴 Live Deployment (Vercel)](https://pro-stack-hub-password-analyzer.vercel.app)**
 
 ---
 
