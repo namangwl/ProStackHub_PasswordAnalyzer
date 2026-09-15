@@ -6,7 +6,7 @@
 
 A high-performance, real-time password security evaluation engine. Built specifically to analyze cryptographic strength based on structural complexity, entropy, and standard cybersecurity protocols without transmitting sensitive data over the network.
 
-**[🔴 Live Deployment (Vercel)](YAHAN_APNA_VERCEL_LINK_PASTE_KAR_DENA)**
+**[🔴 Live Deployment (Vercel)]([https://pro-stack-hub-password-analyzer.vercel.app](https://pro-stack-hub-password-analyzer.vercel.app))**
 
 ---
 
@@ -38,11 +38,8 @@ As per industry-standard cybersecurity guidelines, organizations and end-users s
 ## 💻 Local Setup & Installation
 
 Clone the repository and run it locally:
-
-\`\`\`bash
 # Clone the repository
-git clone https://github.com/namansharmagwl/ProStackHub_PasswordAnalyzer.git
-
+git clone https://github.com/namangwl/ProStackHub_PasswordAnalyzer.git
 # Navigate to the directory
 cd ProStackHub_PasswordAnalyzer
 
